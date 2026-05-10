@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "aura-android-app",
-    "slug": "aura-android-app",
+    "name": "FinTree: Expense Tracker & Budget",
+    "slug": "kanaks-economic-manager",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,12 +18,19 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#050510"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.anonymous.auraandroidapp",
+      "versionCode": 5
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b69c8425-25fa-4139-9455-209cc90a1abd"
+      }
+    },
+    "owner": "kingshuk1s-organization"
   }
 }
