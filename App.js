@@ -23,7 +23,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-const KEY = '@kanak_vault_v2';
+const KEY = '@fintree_vault_v1';
 const DEF = [
   { id: '1', name: 'Factory Expenses', image: null, children: [], transactions: [] },
   { id: '2', name: 'Personal Expenses', image: null, children: [], transactions: [] },
@@ -101,7 +101,7 @@ function AppInner() {
   useEffect(() => {
     AsyncStorage.getItem(KEY).then(v => {
       if (v) { setData(JSON.parse(v)); return; }
-      AsyncStorage.getItem('@kanak_vault_data').then(old => {
+      AsyncStorage.getItem('@fintree_vault_data').then(old => {
         if (!old) return;
         try {
           const oldCats = JSON.parse(old);
@@ -271,7 +271,7 @@ function AppInner() {
         <TouchableOpacity style={s.lockBtn} onPress={() => setUnlocked(true)}>
           <Text style={s.lockBtnTxt}>INITIATE SYSTEM</Text>
         </TouchableOpacity>
-        <Text style={s.lockDev}>Engineered by Tanjim Ahmed Kingshuk</Text>
+        <Text style={s.lockDev}>Built with ❤️ & AI · FinTree Lab</Text>
       </View>
     </SafeAreaView>
   );
@@ -290,7 +290,7 @@ function AppInner() {
               <View style={s.titleRow}>
             <View style={{flex:1}}>
               <Text style={s.hTitle}>FINTREE</Text>
-              <Text style={s.hWelcome}>Welcome Commander, Riffat Ahmed Kanak</Text>
+              <Text style={s.hWelcome}>Welcome to FinTree</Text>
             </View>
             <TouchableOpacity style={s.gearBtn} onPress={() => setShowSettings(true)}>
               <Text style={s.gearIco}>⚙️</Text>

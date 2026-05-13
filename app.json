@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FinTree: Expense Tracker & Budget",
-    "slug": "kanaks-economic-manager",
+    "slug": "fintree-expense-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,8 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#050510"
       },
-      "package": "com.anonymous.auraandroidapp",
-      "versionCode": 5
+      "package": "com.fintreelab.app",
+      "versionCode": 6
     },
     "web": {
       "favicon": "./assets/favicon.png"

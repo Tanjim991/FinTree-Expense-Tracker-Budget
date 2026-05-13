@@ -14,9 +14,20 @@
       },
       "distribution": "internal"
     },
-    "production": {}
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "distribution": "store",
+      "autoIncrement": false
+    }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./google-play-key.json",
+        "track": "internal"
+      }
+    }
   }
 }
